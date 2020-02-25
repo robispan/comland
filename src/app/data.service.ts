@@ -11,7 +11,7 @@ export class DataService {
 	constructor(private _http: HttpClient) {}
 
 	getUsers() {
-		return this._http.get<User[]>(`${this.apiUrl}//users?_limit=3`);
+		return this._http.get<User[]>(`${this.apiUrl}/users?_limit=3`);
 	}
 
 	postUser(user: Object) {
